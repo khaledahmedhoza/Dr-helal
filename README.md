@@ -1,2 +1,2 @@
 # Dr-helal
-this an application for doctor cliic
+this an application for doctor clinic
