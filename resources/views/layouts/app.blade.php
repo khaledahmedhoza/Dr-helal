@@ -26,7 +26,7 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -38,6 +38,8 @@
                     <span class="icon-bar"></span>
                 </button>
 
+                <img src="/images/eye1.png"  style="width:40px; height:40px; position:absolute;bottom:5px;top:5px;left:100px;border-radius:50%;">
+                
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Dr-helal
@@ -75,6 +77,7 @@
         </div>
     </nav>
 
+    @yield('header')
     @yield('content')
 
     <!-- JavaScripts -->
