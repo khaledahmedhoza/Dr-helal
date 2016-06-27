@@ -25,7 +25,7 @@
         }
 
         .body_background{
-            background-image:url(images/background1.jpg);
+            background-image:url("images/background.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -33,9 +33,7 @@
 </head>
 
 @if (Auth::guest())
-
-<body id="app-layout" class="body_background" >
- 
+<body id="app-layout" class="body_background"  >
 @else
 <body id="app-layout" >    
 @endif
