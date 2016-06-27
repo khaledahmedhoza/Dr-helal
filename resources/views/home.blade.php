@@ -4,7 +4,7 @@
     <div class="container">
         <div class="page-header clearfix">
         <h1>
-            <i class="glyphicon glyphicon-user"></i> Clients
+            <i class="glyphicon glyphicon-user"></i> Patients
             <a class="btn btn-success pull-right" href="/addpatient"><i class="glyphicon glyphicon-plus"></i> Create</a>
         </h1>
 
@@ -18,7 +18,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-xs-12 col-sm-12 ">
            <table class="table table-condensed table-striped">
 
                     <thead>

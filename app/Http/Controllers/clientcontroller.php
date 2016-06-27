@@ -44,7 +44,9 @@ class clientcontroller extends Controller
     	$client = Client::orderBy('id','desc')->first();
         $hist = DB::select('select * from histories where clientid = ? order by created_at desc',[$client->id]);
     	$data =  array('client' => $client );
-    	return view('showclient',$data);
+    	//var_dump($data);
+        return view('showclient', compact('hist','data','client'));
+        //return view('showclient',$data);
     }
 
     public function edit(Request $data)

@@ -23,9 +23,23 @@
         .fa-btn {
             margin-right: 6px;
         }
+
+        .body_background{
+            background-image:url(images/background1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
-<body id="app-layout">
+
+@if (Auth::guest())
+
+<body id="app-layout" class="body_background" >
+ 
+@else
+<body id="app-layout" >    
+@endif
+
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -38,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <img src="/images/eye1.png"  style="width:40px; height:40px; position:absolute;bottom:5px;top:5px;left:100px;border-radius:50%;">
+                <img class="navbar-brand" src="/images/eye1.png"  style="width:60px; height:60px; border-radius:50%;">
                 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">

@@ -3,9 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class=" col-md-12 ">
             <div class="panel panel-default">
-                <div class="panel-heading">Add New Patient</div>
+
+                <div class="panel-heading">
+                     <i class="glyphicon glyphicon-plus"></i>Add New Patient
+                </div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/addpatient') }}">
                         {{ csrf_field() }}
@@ -26,7 +29,7 @@
 
 
                         <div class="form-group">
-                            <div class="col-md-3 col-lg-offset-5 col-xs-offset-5">
+                            <div class="col-md-4  col-xs-offset-4 col-sm-offset-5 "> <!-- col-lg-offset-5 col-xs-offset-5 -->
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i> Add Patient
                                 </button>
